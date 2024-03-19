@@ -5,7 +5,7 @@ import NavItem from "../components/nav-item.js";
 const MENU_LIST = [
   { text: "Graph", href: "/" },
   { text: "</> Source Code", href: "https://github.com/justindhillon/place-vanier-line" },
-  { text: "About Me", href: "https://placevanierline.vercel.app/about-me" },
+  { text: "About Me", href: "https://www.justin-dhillon.com/" },
 ];
 
 export default function Navbar() {
@@ -16,9 +16,7 @@ export default function Navbar() {
     <header>
       <nav className={`nav`}>
         <Link href={"/"}>
-          <a>
-            <h1 style={{color:"#2596be"}}>PlaceVanierLine</h1>
-          </a>
+          <h1 style={{color:"#2596be"}}>PlaceVanierLine</h1>
         </Link>
         <div
           onClick={() => setNavActive(!navActive)}
